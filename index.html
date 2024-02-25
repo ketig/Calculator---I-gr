@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
@@ -16,58 +17,62 @@
         <input type="text" id="displayResult" readonly>
 
         <div class="row">
-            <button class="darkBlue">ce</button>
-            <button class="darkBlue">c</button>
-            <button class="darkBlue">
+            <button class="darkBlue" onclick="">ce</button>
+            <button class="clear_btn" onclick="">c</button>
+            <button class="darkBlue" onclick="">
                 <i class="fa-solid fa-delete-left"></i>
             </button>
-            <button class="darkBlue">
+            <button class="darkBlue" onclick="">
                 <i class="fa-solid fa-divide"></i>
             </button>
-            <button class="grey">inv</button>
-            <button class="grey">Rad</button>
-            <button class="grey">Sin</button>
-            <!-- fontawesome -->
+            <button class="grey" onclick="">inv</button>
+            <button class="grey" onclick="">Rad</button>
+            <button class="grey" onclick="">Sin</button>
         </div>
 
         <div class="row">
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
+            <button class="blue" onclick="addToDisplay('7')">7</button>
+            <button class="blue" onclick="addToDisplay('8')">8</button>
+            <button class="blue" onclick="addToDisplay('9')">9</button>
+            <button class="darkBlue" onclick="addToDisplay('/')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="grey" onclick="">Cos</button>
+            <button class="grey" onclick="">Tan</button>
+            <button class="grey" onclick="">%</button>
         </div>
 
         <div class="row">
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
+            <button class="blue" onclick="addToDisplay('4')">4</button>
+            <button class="blue" onclick="addToDisplay('5')">5</button>
+            <button class="blue" onclick="addToDisplay('6')">6</button>
+            <button class="darkBlue" onclick="addToDisplay('-')">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <button class="grey" onclick="">ln</button>
+            <button class="grey" onclick="">Log</button>
+            <button class="grey" onclick="">!</button>
         </div>
 
         <div class="row">
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
+            <button class="blue" onclick="addToDisplay('1')">1</button>
+            <button class="blue" onclick="addToDisplay('2')">2</button>
+            <button class="blue" onclick="addToDisplay('3')">3</button>
+            <button class="darkBlue" onclick="addToDisplay('+')">+</button>
+            <button class="grey" onclick="">^</button>
+            <button class="grey" onclick="">Pi</button>
+            <button class="grey" onclick="">e</button>
         </div>
 
         <div class="row">
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="darkBlue"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
-            <button class="grey"></button>
+            <button class="darkBlue" onclick="addToDisplay('.')">.</button>
+            <button class="blue" onclick="addToDisplay('0')">0</button>
+            <button class="redish" onclick="">=</button>
+            <button class="grey" onclick="">(</button>
+            <button class="grey" onclick="">)</button>
+            <button class="grey" onclick="">
+                <i class="fa-solid fa-square-root-variable"></i>
+            </button>
         </div>
     </div>
 </body>
